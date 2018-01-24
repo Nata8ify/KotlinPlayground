@@ -49,6 +49,7 @@ fun exHighOrderFunctionForNoBath(moneys : List<Money>, predicateCurrency : (Stri
         println(it)
         mutableMoneys.remove(it)
     } }
+
     return mutableMoneys
 }
 
