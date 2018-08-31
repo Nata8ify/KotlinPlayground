@@ -7,13 +7,19 @@ buildscript {
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
+
+    
 }
 
 group 'KotlinPg'
 version '1'
 
 apply plugin: 'kotlin'
-
+kotlin {
+    experimental {
+        coroutines 'enable'
+    }
+}
 repositories {
     mavenCentral()
 }
@@ -26,6 +32,10 @@ dependencies {
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.6'
     compile 'org.mongodb:mongodb-driver:3.6.1'
+// https://mvnrepository.com/artifact/khttp/khttp
+    compile group: 'khttp', name: 'khttp', version: '0.1.0'
+    compile "org.jetbrains.kotlinx:kotlinx-coroutines-core:0.21"
+    implementation "io.reactivex.rxjava2:rxjava:2.2.1"
 
 }
 

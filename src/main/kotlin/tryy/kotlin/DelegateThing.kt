@@ -2,9 +2,10 @@ package tryy.kotlin
 
 import kotlin.reflect.KProperty
 
-class Ex {
-    var d : String by Deleg()
 
+fun main(args: Array<String>) {
+    var d : String by Deleg()
+    println(d)
 }
 
 class Deleg(){

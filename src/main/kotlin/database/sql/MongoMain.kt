@@ -1,11 +1,6 @@
 package database.sql
 
-import com.mongodb.BasicDBObject
-import com.mongodb.DBCollection
-import com.mongodb.client.MongoCollection
-import com.mongodb.client.MongoDatabase
 import org.bson.Document
-import java.util.*
 
 val mongo : database.sql.Mongo = Mongo()
 val collection = mongo.mongoDatabase.getCollection("jedi")

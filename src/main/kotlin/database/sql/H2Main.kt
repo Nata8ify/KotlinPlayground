@@ -1,8 +1,6 @@
 package database.sql
 
-import java.sql.Connection
 import java.util.*
-import javax.swing.text.html.HTML.Tag.H2
 
 val input: Scanner = Scanner(System.`in`)
 val h2: H2 = H2()
